@@ -1,0 +1,25 @@
+<form id="productForm" name="productForm" #productDetailForm="ngForm" (ngSubmit)="addNewProduct(productDetailForm.value)">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3>
+        {{pageTitle}}
+      </h3>
+    </div>
+    <div class="panel-body" *ngIf="product">
+      <div class="form-group">
+        <label for="name" class="control-label">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Name" [(ngModel)]="product.name" #name="ngModel" />
+      </div>
+      <div class="form-group">
+        <label for="color" class="control-label">Color</label>
+        <input type="text" name="color" id="color" class="form-control" placeholder="Color" [(ngModel)]="product.color" #color=ngModel/>
+      </div>
+      <div class="form-group">
+         <input type="submit" value={{btnTitle}} class="btn btn-primary" />
+        </div>
+    </div>
+  </div>
+</form>
+<div>
+  <span *ngIf="isAdded">{{confirmationMessage}}</span>
+</div>

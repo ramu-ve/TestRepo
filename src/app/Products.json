@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "shirt",
+      "color": "blue"
+    },
+    {
+      "name": "Jeans",
+      "color": "Black",
+      "id": 3
+    },
+    {
+      "name": "Shorts",
+      "color": "Beige",
+      "id": 4
+    },
+    {
+      "name": "Cap",
+      "color": "White",
+      "id": 5
+    },
+    {
+      "name": "Cap",
+      "color": "White and Black",
+      "id": 6
+    },
+    {
+      "name": "Cap1",
+      "color": "White and Black",
+      "id": 7
+    },
+    {
+      "name": "shirt",
+      "color": "blue",
+      "id": 8
+    }
+  ]
+}

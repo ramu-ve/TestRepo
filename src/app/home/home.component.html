@@ -1,0 +1,34 @@
+<div class="container">
+ 
+  <h1>Product List</h1>
+  <div>
+    <table border="solid">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Color</th>
+          <th>Delete Action</th>
+          <th>Edit Action</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="products; else elseBlock">
+        <tr *ngFor="let product of products">
+          <td>{{product.id}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.color}}</td>
+          <td (click)="deleteProduct(product.id)"><a style='color:blue'>Delete</a></td>
+          <td [routerLink]="['/product/' + product.id]" routerLinkActive="router-link-active"><a style='color:blue'>Edit</a></td>
+        </tr>
+      </tbody>
+      <tbody *ngIf="!products">
+          <tr>
+              <td colspan="4">
+                  <ng-template #elseBlock>No products available</ng-template>
+              </td>
+            </tr>
+      </tbody>
+    </table>  
+ </div>
+</div>
+
