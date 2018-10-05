@@ -35,5 +35,10 @@
       "color": "blue",
       "id": 8
     }
+    {
+      "name": "Master Branch",
+      "color": "blue",
+      "id": 9
+    }
   ]
 }
